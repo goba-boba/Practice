@@ -14,7 +14,7 @@ enum GameState {
     BUG_WON
 };
 
-// Model 
+ 
 class BugTrapModel {
 public:
     BugTrapModel(int size) : size(size), state(PLAYING), deceptionMode(false) {
@@ -237,7 +237,7 @@ private:
     std::pair<int, int> deceptionTarget;
 };
 
-// View
+
 class BugTrapView {
 public:
     void display(const BugTrapModel& model) {
@@ -281,7 +281,7 @@ public:
     }
 };
 
-// Controller
+
 class BugTrapController {
 public:
     BugTrapController(int size = 8) : model(size), view() {
